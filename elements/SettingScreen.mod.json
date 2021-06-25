@@ -1,0 +1,62 @@
+{
+  "_fv": 21,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 160,
+    "height": 80,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:ModName> Settings",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:ModName> Settings",
+          "x": 141,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Show Position: <VAR:showpositionstatus>",
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "name": "Show Position: <VAR:showpositionstatus>",
+          "x": 141,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "ON/OFF",
+          "onClick": {
+            "name": "Mypositionsettingscmd"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "ON/OFF",
+          "x": 195,
+          "y": 125
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

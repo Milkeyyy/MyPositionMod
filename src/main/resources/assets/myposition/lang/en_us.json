@@ -1,1 +1,5 @@
-{}
+{
+  "message.myposition.disabled": "MyPosition is §cDisabled§r.",
+  "message.myposition.enabled": "MyPosition is §aEnabled§r.",
+  "key.myposition.open_setting_screen": "Open MyPosition Setting Screen"
+}

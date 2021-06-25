@@ -1,4 +1,8 @@
 MyPosition Changelog
 
-Version 1.0
-初回リリースバージョン
+Version 1.1.0
+�ݒ��ʂ�ǉ� GUI�ŗL��/������؂�ւ��\��
+���{��ɑΉ�
+
+Version 1.0.0
+初回リリースバ�?�ジョン

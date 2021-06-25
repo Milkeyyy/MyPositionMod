@@ -1,6 +1,7 @@
 package ml.milkeyyy.myposition.procedures;
 
 import net.minecraft.world.IWorld;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
@@ -33,10 +34,17 @@ public class MypositionsettingscmdProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				String _setval = (String) "ON";
+				entity.getCapability(MypositionModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.showpositionstatus = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 				((PlayerEntity) entity).sendStatusMessage(
 						new StringTextComponent((((("\u00A7l[\u00A76\u00A7l") + "" + (MypositionModVariables.MapVariables.get(world).ModName) + ""
-								+ ("\u00A7r\u00A7l]\u00A7r "))) + "" + ("MyPosition \u00A7aEnabled\u00A7r."))),
+								+ ("\u00A7r\u00A7l]\u00A7r "))) + "" + ((new TranslationTextComponent("message.myposition.enabled").getString())))),
 						(false));
 			}
 		} else if ((((entity.getCapability(MypositionModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -48,12 +56,21 @@ public class MypositionsettingscmdProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				String _setval = (String) "OFF";
+				entity.getCapability(MypositionModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.showpositionstatus = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
 				((PlayerEntity) entity).sendStatusMessage(
 						new StringTextComponent((((("\u00A7l[\u00A76\u00A7l") + "" + (MypositionModVariables.MapVariables.get(world).ModName) + ""
-								+ ("\u00A7r\u00A7l]\u00A7r "))) + "" + ("MyPosition \u00A7cDisabled\u00A7r."))),
+								+ ("\u00A7r\u00A7l]\u00A7r "))) + "" + ((new TranslationTextComponent("message.myposition.disabled").getString())))),
 						(false));
 			}
 		}
+		if (entity instanceof PlayerEntity)
+			((PlayerEntity) entity).closeScreen();
 	}
 }

@@ -56,6 +56,57 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "mypositionsettings"
+    },
+    {
+      "name": "SettingScreen",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "setting_screen"
+    },
+    {
+      "name": "OpenSettingScreenKeyPressed",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "open_setting_screen_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenSettingScreen",
+      "type": "keybind",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "open_setting_screen"
     }
   ],
   "variable_elements": [
@@ -76,11 +127,26 @@
       "type": "string",
       "scope": "map",
       "value": "MyPosition"
+    },
+    {
+      "name": "showpositionstatus",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "ON"
     }
   ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "message.myposition.disabled": "MyPosition is §cDisabled§r.",
+      "message.myposition.enabled": "MyPosition is §aEnabled§r.",
+      "key.myposition.open_setting_screen": "Open MyPosition Setting Screen"
+    },
+    "ja_jp": {
+      "message.myposition.disabled": "MyPositionが §c無効化§r されました。",
+      "message.myposition.enabled": "MyPositionが §a有効化§r されました。",
+      "key.myposition.open_setting_screen": "MyPositionの設定画面を開く"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -89,7 +155,7 @@
   "workspaceSettings": {
     "modid": "myposition",
     "modName": "MyPosition",
-    "version": "1.0.0-release",
+    "version": "1.1.0-release",
     "description": "I\u0027m here.",
     "author": "Milkeyyy",
     "websiteURL": "https://github.com/Milkeyyy/MyPositionMod",
