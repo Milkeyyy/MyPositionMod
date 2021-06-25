@@ -1,0 +1,4 @@
+MyPosition Changelog
+
+Version 1.0
+初回リリースバージョン
