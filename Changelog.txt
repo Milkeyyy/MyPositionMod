@@ -1,8 +1,8 @@
 MyPosition Changelog
 
 Version 1.1.0
-�ݒ��ʂ�ǉ� GUI�ŗL��/������؂�ւ��\��
-���{��ɑΉ�
+設定画面を追加 GUIで有効/無効を切り替え可能に
+日本語に対応
 
-Version 1.0.0
-初回リリースバ�?�ジョン
+Version 1.0.0
+初回リリースバージョン
