@@ -1,0 +1,108 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Myposition",
+      "type": "overlay",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "myposition"
+    },
+    {
+      "name": "UpdateMyposition",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "update_myposition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mypositionsettingscmd",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mypositionsettingscmd",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mypositionsettings",
+      "type": "command",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mypositionsettings"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Myposition",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    },
+    {
+      "name": "showmyposition",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "ModName",
+      "type": "string",
+      "scope": "map",
+      "value": "MyPosition"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "myposition",
+    "modName": "MyPosition",
+    "version": "1.0.0",
+    "author": "Milkeyyy",
+    "websiteURL": "https://mcreator.net",
+    "license": "Copyright 2021 Milkeyyy",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created by Milkeyyy using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "ml.milkeyyy.myposition",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100226215
+}
