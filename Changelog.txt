@@ -1,4 +1,4 @@
 MyPosition Changelog
 
-Version 1.0
+Version 1.0.0-release
 初回リリースバージョン
