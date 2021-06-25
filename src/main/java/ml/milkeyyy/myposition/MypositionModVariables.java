@@ -205,6 +205,7 @@ public class MypositionModVariables {
 			CompoundNBT nbt = new CompoundNBT();
 			nbt.putString("Myposition", instance.Myposition);
 			nbt.putBoolean("showmyposition", instance.showmyposition);
+			nbt.putString("showpositionstatus", instance.showpositionstatus);
 			return nbt;
 		}
 
@@ -213,12 +214,14 @@ public class MypositionModVariables {
 			CompoundNBT nbt = (CompoundNBT) inbt;
 			instance.Myposition = nbt.getString("Myposition");
 			instance.showmyposition = nbt.getBoolean("showmyposition");
+			instance.showpositionstatus = nbt.getString("showpositionstatus");
 		}
 	}
 
 	public static class PlayerVariables {
 		public String Myposition = "\"\"";
 		public boolean showmyposition = true;
+		public String showpositionstatus = "ON";
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				MypositionMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity),
@@ -252,6 +255,7 @@ public class MypositionModVariables {
 				.orElse(new PlayerVariables()));
 		PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 		clone.showmyposition = original.showmyposition;
+		clone.showpositionstatus = original.showpositionstatus;
 		if (!event.isWasDeath()) {
 			clone.Myposition = original.Myposition;
 		}
@@ -279,6 +283,7 @@ public class MypositionModVariables {
 							.orElse(new PlayerVariables()));
 					variables.Myposition = message.data.Myposition;
 					variables.showmyposition = message.data.showmyposition;
+					variables.showpositionstatus = message.data.showpositionstatus;
 				}
 			});
 			context.setPacketHandled(true);

@@ -1,4 +1,8 @@
 MyPosition Changelog
 
-Version 1.0.0-release
+Version 1.1.0
+設定画面を追加 GUIで有効/無効を切り替え可能に
+日本語に対応
+
+Version 1.0.0
 初回リリースバージョン
