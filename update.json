@@ -1,0 +1,9 @@
+{
+  "homepage": "https://github.com/Milkeyyy/MyPositionMod",
+  "promos": {
+    "1.16.5-latest": "1.0.0-release",
+  },
+  "1.16.5": {
+    "1.0.0-release": "https://raw.githubusercontent.com/Milkeyyy/MyPositionMod/master/Changelog.txt",
+  }
+}
