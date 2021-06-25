@@ -4,11 +4,15 @@ license="Copyright 2021 Milkeyyy"
 
 [[mods]]
 modId="myposition"
-version="1.0.0"
+version="1.0.0-release"
 displayName="MyPosition"
 credits="Created by Milkeyyy using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
+displayURL="https://github.com/Milkeyyy/MyPositionMod"
+updateJSONURL="https://raw.githubusercontent.com/Milkeyyy/MyPositionMod/master/update.json"
 authors="Milkeyyy"
+description='''
+I'm here.
+'''
 
 [[dependencies.myposition]]
     modId="minecraft"
