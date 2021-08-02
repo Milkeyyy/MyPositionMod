@@ -1,5 +1,5 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -19,6 +19,7 @@
       }
     ],
     "baseTexture": "",
+    "overlayTarget": "Ingame",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

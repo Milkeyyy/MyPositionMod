@@ -1,4 +1,4 @@
-package ml.milkeyyy.myposition;
+package mod.milkeyyy.myposition;
 
 import net.minecraftforge.fml.network.PacketDistributor;
 import net.minecraftforge.fml.network.NetworkEvent;

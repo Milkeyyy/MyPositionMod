@@ -1,8 +1,14 @@
 MyPosition Changelog
 
-Version 1.1.0
-è¨­å®šç”»é¢ã‚’è¿½åŠ  GUIã§æœ‰åŠ¹/ç„¡åŠ¹ã‚’åˆ‡ã‚Šæ›¿ãˆå¯èƒ½ã«
-æ—¥æœ¬èªžã«å¯¾å¿œ
+Version 1.1.1
+ƒL[‚ð‰Ÿ‚µ‚½‚Æ‚«‚ÉAGUI‚ªŠJ‚­‚Ì‚Å‚Í‚È‚­A’¼Ú•\Ž¦‚ªØ‚è‘Ö‚¦‚ç‚ê‚é‚æ‚¤‚É•ÏX
+À•W‚Ì‘Ž®‚ð•ÏX (ƒXƒy[ƒX‚ð’Ç‰ÁA¬”“_ˆÈ‰º‚ðíœ)
+Mod‚ÌƒpƒbƒP[ƒW–¼‚ð "ml.milkeyyy.myposition" ‚©‚ç "mod.milkeyyy.myposition" ‚Ö•ÏX
 
-Version 1.0.0
-åˆå›žãƒªãƒªãƒ¼ã‚¹ãƒãƒ¼ã‚¸ãƒ§ãƒ³
+Version 1.1.0
+Ý’è‰æ–Ê‚ð’Ç‰Á GUI‚Å—LŒø/–³Œø‚ðØ‚è‘Ö‚¦‰Â”\‚É
+“ú–{Œê‚É‘Î‰ž
+
+Version 1.0.0
+åˆå›žãƒªãƒªãƒ¼ã‚¹ãƒã?¼ã‚¸ãƒ§ãƒ³‰‰ñƒŠƒŠ[ƒXƒo[ƒWƒ‡ƒ“
+‰‰ñƒŠƒŠ[ƒXƒo[ƒWƒ‡ƒ“

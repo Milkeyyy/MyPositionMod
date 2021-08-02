@@ -58,15 +58,6 @@
       "registry_name": "mypositionsettings"
     },
     {
-      "name": "SettingScreen",
-      "type": "gui",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "setting_screen"
-    },
-    {
       "name": "OpenSettingScreenKeyPressed",
       "type": "procedure",
       "sortid": 5,
@@ -79,18 +70,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -140,12 +119,12 @@
     "en_us": {
       "message.myposition.disabled": "MyPosition is §cDisabled§r.",
       "message.myposition.enabled": "MyPosition is §aEnabled§r.",
-      "key.myposition.open_setting_screen": "Open MyPosition Setting Screen"
+      "key.myposition.open_setting_screen": "Switch the display of MyPosition"
     },
     "ja_jp": {
       "message.myposition.disabled": "MyPositionが §c無効化§r されました。",
       "message.myposition.enabled": "MyPositionが §a有効化§r されました。",
-      "key.myposition.open_setting_screen": "MyPositionの設定画面を開く"
+      "key.myposition.open_setting_screen": "MyPositionの表示を切り替え"
     }
   },
   "foldersRoot": {
@@ -155,7 +134,7 @@
   "workspaceSettings": {
     "modid": "myposition",
     "modName": "MyPosition",
-    "version": "1.1.0-release",
+    "version": "1.1.1-release",
     "description": "I\u0027m here.",
     "author": "Milkeyyy",
     "websiteURL": "https://github.com/Milkeyyy/MyPositionMod",
@@ -169,8 +148,8 @@
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
     "credits": "Created by Milkeyyy using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "ml.milkeyyy.myposition",
+    "modElementsPackage": "mod.milkeyyy.myposition",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100226215
+  "mcreatorVersion": 202100231709
 }

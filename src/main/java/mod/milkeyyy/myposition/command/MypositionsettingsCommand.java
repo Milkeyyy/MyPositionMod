@@ -1,5 +1,5 @@
 
-package ml.milkeyyy.myposition.command;
+package mod.milkeyyy.myposition.command;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -11,7 +11,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.command.Commands;
 import net.minecraft.command.CommandSource;
 
-import ml.milkeyyy.myposition.procedures.MypositionsettingscmdProcedure;
+import mod.milkeyyy.myposition.procedures.MypositionsettingscmdProcedure;
 
 import java.util.Map;
 import java.util.HashMap;

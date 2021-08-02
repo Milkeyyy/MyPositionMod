@@ -1,4 +1,4 @@
-package ml.milkeyyy.myposition.procedures;
+package mod.milkeyyy.myposition.procedures;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -7,8 +7,8 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.World;
 import net.minecraft.entity.Entity;
 
-import ml.milkeyyy.myposition.MypositionModVariables;
-import ml.milkeyyy.myposition.MypositionMod;
+import mod.milkeyyy.myposition.MypositionModVariables;
+import mod.milkeyyy.myposition.MypositionMod;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -45,9 +45,9 @@ public class UpdateMypositionProcedure {
 		if ((((entity.getCapability(MypositionModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new MypositionModVariables.PlayerVariables())).showmyposition) == (true))) {
 			{
-				String _setval = (String) (("X/Y/Z: ") + "" + ((new java.text.DecimalFormat("##.#").format((entity.getPosX())))) + "" + ("/") + ""
-						+ ((new java.text.DecimalFormat("##.#").format((entity.getPosY())))) + "" + ("/") + ""
-						+ ((new java.text.DecimalFormat("##.#").format((entity.getPosZ())))));
+				String _setval = (String) (("X/Y/Z: ") + "" + ((new java.text.DecimalFormat("#").format(Math.floor((entity.getPosX()))))) + "" + ("/")
+						+ "" + ((new java.text.DecimalFormat("#").format(Math.floor((entity.getPosY()))))) + "" + ("/") + ""
+						+ ((new java.text.DecimalFormat("#").format(Math.floor((entity.getPosZ()))))));
 				entity.getCapability(MypositionModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Myposition = _setval;
 					capability.syncPlayerVariables(entity);
