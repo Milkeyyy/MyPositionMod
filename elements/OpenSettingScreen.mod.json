@@ -1,9 +1,9 @@
 {
-  "_fv": 21,
+  "_fv": 23,
   "_type": "keybind",
   "definition": {
     "triggerKey": "N",
-    "keyBindingName": "Open Setting Screen",
+    "keyBindingName": "Switch the display of MyPosition",
     "keyBindingCategoryKey": "ui",
     "onKeyPressed": {
       "name": "OpenSettingScreenKeyPressed"

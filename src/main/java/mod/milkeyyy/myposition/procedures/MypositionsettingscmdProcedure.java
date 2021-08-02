@@ -1,4 +1,4 @@
-package ml.milkeyyy.myposition.procedures;
+package mod.milkeyyy.myposition.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.TranslationTextComponent;
@@ -6,8 +6,8 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
-import ml.milkeyyy.myposition.MypositionModVariables;
-import ml.milkeyyy.myposition.MypositionMod;
+import mod.milkeyyy.myposition.MypositionModVariables;
+import mod.milkeyyy.myposition.MypositionMod;
 
 import java.util.Map;
 
@@ -70,7 +70,5 @@ public class MypositionsettingscmdProcedure {
 						(false));
 			}
 		}
-		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).closeScreen();
 	}
 }

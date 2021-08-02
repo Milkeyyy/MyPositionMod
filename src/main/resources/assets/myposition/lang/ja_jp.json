@@ -1,5 +1,5 @@
 {
   "message.myposition.disabled": "MyPositionが §c無効化§r されました。",
   "message.myposition.enabled": "MyPositionが §a有効化§r されました。",
-  "key.myposition.open_setting_screen": "MyPositionの設定画面を開く"
+  "key.myposition.open_setting_screen": "MyPositionの表示を切り替え"
 }

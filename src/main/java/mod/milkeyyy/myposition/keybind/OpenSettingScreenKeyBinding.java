@@ -1,5 +1,5 @@
 
-package ml.milkeyyy.myposition.keybind;
+package mod.milkeyyy.myposition.keybind;
 
 import org.lwjgl.glfw.GLFW;
 
@@ -18,9 +18,9 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.client.Minecraft;
 
-import ml.milkeyyy.myposition.procedures.OpenSettingScreenKeyPressedProcedure;
-import ml.milkeyyy.myposition.MypositionModElements;
-import ml.milkeyyy.myposition.MypositionMod;
+import mod.milkeyyy.myposition.procedures.OpenSettingScreenKeyPressedProcedure;
+import mod.milkeyyy.myposition.MypositionModElements;
+import mod.milkeyyy.myposition.MypositionMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -93,9 +93,6 @@ public class OpenSettingScreenKeyBinding extends MypositionModElements.ModElemen
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				OpenSettingScreenKeyPressedProcedure.executeProcedure($_dependencies);
 			}
